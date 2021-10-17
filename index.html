@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-4"  id="filter">
+          <fieldset>
+            <legend>Количество пересадок</legend>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="transfer_all"
+                id="transfer_all"
+                name="transfer_all"
+                data-type="transfer"
+              />
+              <label class="form-check-label" for="transfer_all"> Все </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="transfer_0"
+                id="transfer_0"
+                name="transfer_0"
+                data-type="transfer"
+              />
+              <label class="form-check-label" for="transfer_0">
+                Без пересадок
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="transfer_1"
+                id="transfer_1"
+                name="transfer_1"
+                data-type="transfer"
+              />
+              <label class="form-check-label" for="transfer_1">
+                1 пересадка
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="transfer_2"
+                id="transfer_2"
+                name="transfer_2"
+                data-type="transfer"
+              />
+              <label class="form-check-label" for="transfer_2">
+                2 пересадки
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="transfer_3"
+                id="transfer_3"
+                name="transfer_3"
+                data-type="transfer"
+              />
+              <label class="form-check-label" for="transfer_3">
+                3 пересадки
+              </label>
+            </div>
+          </fieldset>
+
+        </div>
+        <div class="col-8">
+          <div class="btn-group w-100" role="group" id="sort">
+            <input
+              type="radio"
+              class="btn-check"
+              name="sort"
+              id="price"
+              value="price"
+              autocomplete="off"
+              checked
+            />
+            <label class="btn btn-outline-primary" for="price"
+              >Самый дешевый</label
+            >
+
+            <input
+              type="radio"
+              class="btn-check"
+              name="sort"
+              id="duration"
+              value="duration"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-primary" for="duration"
+              >Самый быстрый</label
+            >
+
+            <input
+              type="radio"
+              class="btn-check"
+              name="sort"
+              id="optimal"
+              value="optimal"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-primary" for="optimal"
+              >Оптимальный</label
+            >
+          </div>
+          <div id="content"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js" type="module"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+  </body>
+</html>
